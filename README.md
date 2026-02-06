@@ -25,6 +25,11 @@ Dev:
 npm run dev
 ```
 
+## Tests
+```bash
+npm test
+```
+
 Healthcheck:
 ```bash
 curl http://localhost:3000/health
@@ -82,9 +87,4 @@ All errors are returned in a unified JSON format:
     "details": []
   }
 }
-```
-
-## Tests
-```bash
-npm test
 ```
