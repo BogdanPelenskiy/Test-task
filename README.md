@@ -39,7 +39,12 @@ curl http://localhost:3000/health
 
 ### Create task
 ```bash
-curl -X POST http://localhost:3000/tasks   -H "Content-Type: application/json"   -d '{"title":"My first task","description":"Optional description"}'
+Invoke-RestMethod `
+  -Method Post `
+  -Uri "http://localhost:3000/tasks" `
+  -ContentType "application/json" `
+  -Body '{"title":"My first task","description":"Optional description"}'
+
 ```
 
 ### List tasks (filters + pagination)
